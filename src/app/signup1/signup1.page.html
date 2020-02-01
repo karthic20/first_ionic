@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar text-center>
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+  <ion-item>
+    <ion-list>
+      <ion-label>Username</ion-label>
+      <ion-input type='text' [(ngModel)]="username"></ion-input>
+      <ion-label>Mobile</ion-label>
+      <ion-input type='text' [(ngModel)]="mobile"></ion-input>
+      <ion-label>Email</ion-label>
+      <ion-input type='text'></ion-input>
+      <ion-label>Passkey</ion-label>
+      <ion-input type='password' [(ngModel)]="password"></ion-input>
+      <ion-label>Confirm Passkey</ion-label>
+      <ion-input type='password' [(ngModel)]="cpassword"></ion-input>   
+    </ion-list>
+  </ion-item>
+  <ion-button color='dark' (click)="register()">Register</ion-button>
+</ion-content>
